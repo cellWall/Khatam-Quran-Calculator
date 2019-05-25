@@ -17,7 +17,7 @@ function calculateDaysNeeded() {
     }
     
     if (numberOfPages && numberOfPages >0 && numberOfPages <605){
-        message = daysNeeded.toFixed(0) + 'days'
+        message = daysNeeded.toFixed(0) + ' days'
     }
 
     document.getElementById('answer').innerHTML = message
