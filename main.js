@@ -16,6 +16,9 @@ function calculateDaysNeeded() {
         message = "the least number of pages you can read is 0"
     }
     
+    if (numberOfPages && numberOfPages >0 && numberOfPages <605){
+        message = daysNeeded.toFixed(0) + 'days'
+    }
 
     document.getElementById('answer').innerHTML = message
 }
