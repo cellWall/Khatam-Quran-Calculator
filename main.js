@@ -12,7 +12,9 @@ function calculateDaysNeeded() {
 
     if (numberOfPages > 604) {
         message = "there are only 604 pages in the Qur'an."
-    } 
+    } else if (numberOfPages < 0) {
+        message = "the least number of pages you can read is 0"
+    }
     
 
     document.getElementById('answer').innerHTML = message
